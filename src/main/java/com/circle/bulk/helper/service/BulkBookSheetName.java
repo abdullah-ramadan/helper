@@ -1,0 +1,12 @@
+package com.circle.bulk.helper.service;
+
+public enum BulkBookSheetName {
+  PRODUCTS,
+  SECONDARY_CATEGORIES,
+  VARIATIONS,
+  CATEGORIES_OPTIONS,
+  CATEGORIES_OPTIONS_VALUES,
+  IDENTIFICATION,
+  PRODUCT_COVER_IMAGE,
+  VARIATIONS_IMAGES
+}

@@ -1,0 +1,1 @@
+java --enable-preview -jar bulk_helper_tool.jar

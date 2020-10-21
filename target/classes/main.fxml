@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<VBox minHeight="200.0" minWidth="200.0" prefHeight="300.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.circle.bulk.helper.controller.MainController">
+    <children>
+        <Pane maxHeight="600.0" maxWidth="800.0" minHeight="200.0" minWidth="200.0" prefHeight="300.0"
+              prefWidth="600.0">
+            <children>
+                <TextField fx:id="bulkSheetPathTxtField" layoutX="158.0" layoutY="47.0" prefHeight="25.0"
+                           prefWidth="352.0"/>
+                <Label layoutX="23.0" layoutY="47.0" prefHeight="25.0" prefWidth="133.0" text="Select Bulk Sheet"/>
+                <Button fx:id="bulkSheetPathBtn" layoutX="514.0" layoutY="47.0" mnemonicParsing="false"
+                        onAction="#bulkSheetPathBtnAction" prefHeight="25.0" prefWidth="70.0" text="...."/>
+                <TextField fx:id="productsAssetPathTxtField" layoutX="158.0" layoutY="82.0" prefHeight="25.0"
+                           prefWidth="352.0"/>
+                <Label layoutX="23.0" layoutY="82.0" prefHeight="25.0" prefWidth="133.0" text="Select Images Folder"/>
+                <Button fx:id="productsAssetPathBtn" layoutX="514.0" layoutY="82.0" mnemonicParsing="false"
+                        onAction="#productsAssetPathBtnAction" prefHeight="25.0" prefWidth="70.0" text="...."/>
+                <Button fx:id="startBtn" layoutX="274.0" layoutY="116.0" mnemonicParsing="false" onAction="#startAction"
+                        prefHeight="25.0" prefWidth="70.0" text="Start"/>
+                <TextField fx:id="updatedBulkSheetPathTxtField" editable="false" layoutX="158.0" layoutY="150.0"
+                           prefHeight="25.0" prefWidth="352.0"/>
+                <Label layoutX="23.0" layoutY="150.0" prefHeight="25.0" prefWidth="133.0" text="Updated Bulk Path"/>
+                <Button layoutX="242.0" layoutY="199.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0"
+                        text="Generate HTML Page" onAction="#generateHtmlFile"/>
+            </children>
+        </Pane>
+    </children>
+</VBox>
